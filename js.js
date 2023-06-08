@@ -9,27 +9,9 @@ function Timer(duration, element) {
 		seconds: document.getElementById('seconds'),
 	};
 	
-	
-	/*document.getElementById('toggle').addEventListener('click', function() {
-		var cl = 'countdown--wide';
-		if (self.element.classList.contains(cl)) {
-			self.element.classList.remove(cl);
-		} else {
-			self.element.classList.add(cl);
-		}
-	});*/
-	
-	
 	var hammerHandler = new Hammer(this.element);
 	hammerHandler.get('pan').set({ direction: Hammer.DIRECTION_VERTICAL });
 	hammerHandler.on('panup pandown', function(ev) {
-		if (!self.running) {
-			if (ev.direction === Hammer.DIRECTION_UP && self.duration < 999000) {
-				self.setDuration(self.duration + 1000);
-			} else if (ev.direction === Hammer.DIRECTION_DOWN && self.duration > 0) {
-				self.setDuration(self.duration - 1000);
-			}
-		}
 	});
 	
 	hammerHandler.on('tap', function() {
