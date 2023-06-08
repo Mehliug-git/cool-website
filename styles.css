@@ -5,26 +5,12 @@ html, body {
 a{
 	
 	position: relative;
-	z-index: 9999;
+	z-index: 10;
 	font-family: 'Oswald', sans-serif;
 	color: white;
 	font-size: 5%;
 	padding-left: 1%;
 	
-	cursor: pointer;
-	
-}
-
-
-p{
-	
-	align-items: start;
-	padding-bottom: 37%;
-	position: relative;
-	z-index: 9999;
-	font-family: 'Oswald', sans-serif;
-	color: white;
-	font-size: 6%;
 	cursor: pointer;
 	
 }
