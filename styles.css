@@ -1,31 +1,31 @@
 html, body {
-	 height: 100%;
+	 height: auto;
 }
 
 a{
-	
-	position: absolute;
-	align-items: center;
-	padding-bottom: 30%;
+	align-items: start;
+	position: relative;
+	z-index: 9999;
 	font-family: 'Oswald', sans-serif;
 	color: white;
-	font-size: 10%;
+	
 	cursor: pointer;
 	
 }
 
-b{
+
+p{
 	
-	position: absolute;
-	align-items: center;
-	padding-bottom: 20%;
+	align-items: start;
+	padding-bottom: 37%;
+	position: relative;
+	z-index: 9999;
 	font-family: 'Oswald', sans-serif;
 	color: white;
-	font-size: 10%;
+	font-size: 6%;
 	cursor: pointer;
 	
 }
-
 
 
  body {

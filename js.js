@@ -10,14 +10,14 @@ function Timer(duration, element) {
 	};
 	
 	
-	document.getElementById('toggle').addEventListener('click', function() {
+	/*document.getElementById('toggle').addEventListener('click', function() {
 		var cl = 'countdown--wide';
 		if (self.element.classList.contains(cl)) {
 			self.element.classList.remove(cl);
 		} else {
 			self.element.classList.add(cl);
 		}
-	});
+	});*/
 	
 	
 	var hammerHandler = new Hammer(this.element);
