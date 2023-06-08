@@ -9,7 +9,8 @@ a{
 	font-family: 'Oswald', sans-serif;
 	color: white;
 	padding-left: 1%;
-	padding-bottom: 150%;
+	padding-bottom: 30%;
+	font-size: 30px;
 	cursor: pointer;
 	
 }
