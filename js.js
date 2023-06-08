@@ -66,7 +66,7 @@ Timer.prototype.start = function() {
 			self.els.seconds.textContent = 0;
 			self.els.ticker.style.height = '0%';
 			self.element.classList.add('countdown--ended');
-			window.location.href = 'http://example.com';
+			window.location.href = 'crash.html';
 		}
 	};
 	

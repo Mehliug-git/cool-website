@@ -1,6 +1,33 @@
 html, body {
 	 height: 100%;
 }
+
+a{
+	
+	position: absolute;
+	align-items: center;
+	padding-bottom: 30%;
+	font-family: 'Oswald', sans-serif;
+	color: white;
+	font-size: 10%;
+	cursor: pointer;
+	
+}
+
+b{
+	
+	position: absolute;
+	align-items: center;
+	padding-bottom: 20%;
+	font-family: 'Oswald', sans-serif;
+	color: white;
+	font-size: 10%;
+	cursor: pointer;
+	
+}
+
+
+
  body {
 	 background: black;
 }
