@@ -3,12 +3,14 @@ html, body {
 }
 
 a{
-	align-items: start;
+	
 	position: relative;
 	z-index: 9999;
 	font-family: 'Oswald', sans-serif;
 	color: white;
-	
+	font-size: 5%;
+	padding-left: 1%;
+	margin-bottom: 150%;
 	cursor: pointer;
 	
 }
