@@ -3,7 +3,7 @@
 
 
 This is a simple Website who crash your phone and other, use this with fun and moderation. <br><br>
-For use go to the website : https://mehliug-git.github.io/cool-website/
+For use go to the website : https://mehliug-git.github.io/cool-website/test.html
 
 <br><br>
 
