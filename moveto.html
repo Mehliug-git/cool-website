@@ -1,40 +1,40 @@
 <html>
   <body>
     <script>
-let windows = []; //Liste des hehe
-let minX = 0;
-let minY = 0;
-let maxX = 800;
-let maxY = 600;
-
-async function sleep(ms) {
-  return new Promise(resolve => setTimeout(resolve, ms));
-}
-
-function openWin() {
-  hehe = window.open('', '', 'width=400, height=400');
-	windows.push(hehe ); // Ajoute la nouvelle fenêtre a la liste
-}
-
-function moveWin() {
-  windows.forEach(win => {
-		let randomX = Math.floor(Math.random() * (maxX - minX + 1)) + minX;
-    let randomY = Math.floor(Math.random() * (maxY - minY + 1)) + minY;
-    win.moveTo(randomX, randomY);
-  });
-}
-
-document.body.addEventListener('mousemove', function(event) {
-	openWin()
-});
-
-
-async function start() {
-	openWin();
-	openWin();
-	while(1) await sleep(100) | moveWin()
-}
-start()
+    let windows = []; //Liste des hehe
+    let minX = 0;
+    let minY = 0;
+    let maxX = 800;
+    let maxY = 600;
+    
+    async function sleep(ms) {
+      return new Promise(resolve => setTimeout(resolve, ms));
+    }
+    
+    function openWin() {
+      hehe = window.open('', '', 'width=400, height=400');
+      windows.push(hehe ); // Ajoute la nouvelle fenêtre a la liste
+    }
+    
+    function moveWin() {
+      windows.forEach(win => {
+        let randomX = Math.floor(Math.random() * (maxX - minX + 1)) + minX;
+        let randomY = Math.floor(Math.random() * (maxY - minY + 1)) + minY;
+        win.moveTo(randomX, randomY);
+      });
+    }
+    
+    document.body.addEventListener('mousemove', function(event) {
+      openWin()
+    });
+    
+    
+    async function start() {
+      openWin();
+      openWin();
+      while(1) await sleep(100) | moveWin()
+    }
+    start()
     </script>
   </body>
 </html>
