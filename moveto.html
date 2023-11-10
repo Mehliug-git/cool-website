@@ -15,14 +15,15 @@
       hehe = window.open('', '', 'width=400, height=400');
       windows.push(hehe ); // Ajoute la nouvelle fenêtre a la liste
     }
-    
     function moveWin() {
       windows.forEach(win => {
-        let randomX = Math.floor(Math.random() * (maxX - minX + 1)) + minX;
-        let randomY = Math.floor(Math.random() * (maxY - minY + 1)) + minY;
-        win.moveTo(randomX, randomY);
-      });
+        if (win && !win.closed) { // Vérifie si la fenêtre est définie et n'est pas fermée
+          let randomX = Math.floor(Math.random() * (maxX - minX + 1)) + minX;
+          let randomY = Math.floor(Math.random() * (maxY - minY + 1)) + minY;
+          win.moveTo(randomX, randomY);
     }
+  });
+}
     
     document.body.addEventListener('mousemove', function(event) {
       openWin()
