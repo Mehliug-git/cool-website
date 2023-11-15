@@ -1,6 +1,8 @@
 <html>
   <body>
+    <h1>Click on the page to start this test</h1>
     <button click="start()">Clic me for start !</button>
+    <button click="Next_test()">Clic me for go to the next test !</button>
     <script>
     let windows = []; //Liste des hehe
     let minX = 0;
@@ -22,6 +24,7 @@
           let randomX = Math.floor(Math.random() * (maxX - minX + 1)) + minX;
           let randomY = Math.floor(Math.random() * (maxY - minY + 1)) + minY;
           win.moveTo(randomX, randomY);
+          openWin();
     }
   });
 }
@@ -36,9 +39,10 @@
       openWin();
       while(1) await sleep(100) | moveWin()
     }
-    start()
-    </script>
-    <script>setTimeout(() => {  location='https://mehliug-git.github.io/cool-website/js.html'; }, 15000);</script>	    
 
+    function Next_test() {
+        location='https://mehliug-git.github.io/cool-website/js.html';
+    }
+    </script>
   </body>
 </html>
