@@ -4,8 +4,9 @@
     <h2>This page is a YouAreAnIdiot like, for modern Browser</h2>
 
 
-    <button click="start()">Clic me for start !</button>
-    <button click="Next_test()">Clic me for go to the next test !</button>
+    <button onclick="start()">Clic me for start the test !</button>
+    
+    <button onclick="Next_test()">Clic me for go to the next test !</button>
     <script>
     let windows = []; //Liste des hehe
     let minX = 0;
@@ -31,7 +32,12 @@
     }
   });
 }
-  
+    
+    document.body.addEventListener('mousemove', function(event) {
+      openWin()
+    });
+    
+    
     async function start() {
       openWin();
       openWin();
