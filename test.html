@@ -74,8 +74,10 @@ p {
 }
 </style>
 <script>
-var timer = new Timer(10000, windows.location = 'crash.html' );
-timer.start();
+setTimeout(function() {
+    window.location.href = 'crash.html';
+}, 5000); 
+
 </script>
 
 </body>
