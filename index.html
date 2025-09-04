@@ -1,7 +1,69 @@
 <html>
-
-
+<head>
+  <title>Cool Website - Choose Your Test</title>
+  <style>
+    body {
+      background-color: #222;
+      color: white;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      text-align: center;
+    }
+    
+    h1 {
+      margin-bottom: 30px;
+      color: #fff;
+      text-shadow: 2px 2px 4px #000;
+    }
+    
+    .button {
+      background-color: #444;
+      border: 2px solid #666;
+      color: white;
+      padding: 15px 30px;
+      margin: 10px;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      border-radius: 5px;
+      transition: background-color 0.3s, border-color 0.3s;
+      font-size: 16px;
+      min-width: 200px;
+    }
+    
+    .button:hover {
+      background-color: #555;
+      border-color: #888;
+    }
+    
+    .auto-redirect {
+      margin-top: 20px;
+      font-size: 14px;
+      color: #aaa;
+    }
+  </style>
+</head>
 <body>
-<script>location='test.html'</script>
+  <h1>Welcome to Cool Website</h1>
+  <p>Choose your test:</p>
+  
+  <a href="test.html" class="button">🎯 Browser Crash Test</a>
+  <a href="mailto.html" class="button">📧 Mailto Function</a>
+  
+  <div class="auto-redirect">
+    <p>Or wait 5 seconds for automatic redirect to Browser Crash Test...</p>
+  </div>
+  
+  <script>
+    // Auto-redirect after 5 seconds to maintain original behavior
+    setTimeout(function() {
+      location = 'test.html';
+    }, 5000);
+  </script>
 </body>
 </html>
